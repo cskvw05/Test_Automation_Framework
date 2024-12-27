@@ -14,7 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-    <selenium.version>4.25.0</selenium.version>
+    <selenium.version>4.27.0</selenium.version>
     <appium.version>9.3.0</appium.version>
     <testng.version>7.10.2</testng.version>
     <jackson.version>2.17.2</jackson.version>
@@ -31,7 +31,6 @@
       <artifactId>selenium-java</artifactId>
       <version>${selenium.version}</version>
     </dependency>
-
     <!-- Appium -->
     <dependency>
       <groupId>io.appium</groupId>
@@ -141,6 +140,16 @@
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
       <version>20240303</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-api</artifactId>
+      <version>4.27.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example</groupId>
+      <artifactId>framework</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
 
   </dependencies>
