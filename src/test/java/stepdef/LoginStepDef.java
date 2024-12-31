@@ -16,8 +16,10 @@ public class LoginStepDef  extends BaseStepDef {
 
     @And("user get the title of the page")
     public void user_get_the_title_of_the_page() {
-       String val=utils.getPageTitle();
-        System.out.println(val);
+        String expected="Online Shopping site in India";
+       String actual=utils.getPageTitle();
+        System.out.println(actual);
+       assertUtils.softAssertEquals(actual,expected,"validated");
     }
 
 

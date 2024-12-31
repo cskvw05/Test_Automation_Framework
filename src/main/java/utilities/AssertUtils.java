@@ -5,7 +5,7 @@ import org.testng.asserts.SoftAssert;
 
 public class AssertUtils {
 
-    private SoftAssert softAssert;
+    private final SoftAssert softAssert;
 
     // Constructor to initialize SoftAssert
     public AssertUtils() {
