@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/Features/",
         glue = {"stepdef","hooks","baseClass"},
        // plugin = {"pretty", "com.epam.reportportal.cucumber.ScenarioReporter"},
-        tags="@Login"
+        tags="@api"
 
 )
 public class TestRunner  extends AbstractTestNGCucumberTests {
