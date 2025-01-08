@@ -83,16 +83,6 @@ public class Utils {
         }
     };
 
-
-
-
-
-
-
-
-
-
-
     public Utils(DriverManager driverManager) {
 
         Utils.driverManager=driverManager;
@@ -171,7 +161,7 @@ public boolean waitForElementToBeClickable(WebElement element,int timeout){
     public boolean waitForElementToBePresent(WebElement element,int timeout){
         try {
             FluentWait<WebElement> wait = new FluentWait<>(element).withTimeout(Duration.ofSeconds(timeout))
-                    .ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
+                    .ignoring(NoSuchElementException.class, StaleElementReferenceException.class).pollingEvery(Duration.ofMillis(300));
             wait.until(present);
             return true;
         } catch (TimeoutException e) {

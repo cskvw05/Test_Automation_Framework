@@ -4,9 +4,12 @@ import baseClass.BaseStepDef;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 
+import java.util.Collections;
+
 public class LoginStepDef  extends BaseStepDef {
 
     public LoginStepDef(){
+
         super();
     }
     @Given("user open the url")
@@ -21,6 +24,8 @@ public class LoginStepDef  extends BaseStepDef {
         System.out.println(actual);
        assertUtils.softAssertEquals(actual,expected,"validated");
     }
+
+
 
 
 
